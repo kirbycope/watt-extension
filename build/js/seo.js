@@ -1,0 +1,8 @@
+var successCss="background: rgb(223, 240, 216); color: rgb(60, 118, 61);";var infoCss="background: rgb(217, 237, 247); color: rgb(49, 112, 143);";var warningCss="background: rgb(252, 248, 227); color: rgb(138, 109, 59);";var dangerCss="background: rgb(242, 222, 222); color: rgb(169, 68, 66);";console.log("%c Checking Bing and Google Guideline: <title> tag ...",infoCss);var title=document.title;if(title==""){console.log("%c <title> tag not set.",dangerCss);}
+else{console.log("%c <title> tag is set: "+title,successCss);}
+console.log("%c Complete!",infoCss);console.log("%c Checking Bing and Google Guideline: <meta description> tag ...",infoCss);var metas=document.getElementsByTagName('meta');for(i=0;i<metas.length;i++){if(metas[i].getAttribute("name")=="description"){if(metas[i].getAttribute("content")==""){console.log("%c <meta description> needs content.",dangerCss);}
+else{console.log("%c <meta description> tag is set: "+metas[i].getAttribute("content"),successCss);}}}
+console.log("%c Complete!",infoCss);console.log("%c Checking Bing Guideline: Only one <H1> tag per page ...",infoCss);var h1s=document.getElementsByTagName('h1');if(h1s.length>1){console.log("%c More than one <H1> tag found on page.",dangerCss);}
+else if(h1s.length==1){console.log("%c Only one <h1> is set: "+h1s[0].textContent,successCss);}
+else{console.log("%c No <h1> element found on page",warningCss);}
+console.log("%c Complete!",infoCss);

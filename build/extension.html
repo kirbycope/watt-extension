@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- META DATA -->
+	<title>WATT</title>
+	<meta name="description" content="Web Automation Testing Tool"/>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- RESOURCES -->
+	<link type='text/css' href='css/extension.css' rel='stylesheet'>
+</head>
+<body>
+	<main>
+		<section>
+			<h2 class="devices-header">Devices</h2>
+			<button type="button" class="icon custom-resizer" id="setCustomBreakpoint" title="Set a custom breakpoint"></button>
+			<div id="custom-resize-div" class="custom-width-hidden">
+				<label>Width: </label>
+				<input type="number" id="customWidthField" placeholder="width"></input>
+				<button type="button" class="btn btn-primary" id="goCustomWidth">Go</button>
+			</div>
+			<p>
+				<button type="button" class="icon resize-mobile" id="commandResizeWindowMobile" title="Mobile (320px wide)"></button>
+				<button type="button" class="icon resize-mobilewide" id="commandResizeWindowMobileWide" title="Mobile Wide (480px wide)"></button>
+				<button type="button" class="icon resize-tablet" id="commandResizeWindowTablet" title="Tablet (640px wide)"></button>
+				<button type="button" class="icon resize-desktop" id="commandResizeWindowDesktop" title="Desktop (960px wide)"></button>
+				<button type="button" class="icon resize-desktopwide" id="commandResizeWindowDesktopWide" title="Desktop Wide (1280px wide)"></button>
+			</p>
+		</section>
+		<section>
+			<h2>Common Commands</h2>
+			<p>
+				<button type="button" class="btn btn-primary" id="commandClearCache" title="Clear all app caches, browser caches, and local storage">Clear All Caches</button>
+				<button type="button" class="btn btn-primary" id="commandClearCurrentDomainCookies" title="Clear all cookies for the current domain">Clear Domain Cookies</button>
+				<button type="button" class="btn btn-primary" id="commandClearCookies" title="Clear all cookies and server-bound certificates">Clear All Cookies</button>
+			</p>
+		</section>
+		<section>
+			<h2>Debugging</h2>
+			<p>
+				<button type="button" class="btn btn-primary" id="debugInjectJquery" title="Inject jQuery into the activeTab">Inject jQuery</button>
+				<button type="button" class="btn btn-primary" id="debugPageSpeedInsights" title="PageSpeed Insights analyzes the content of a web page, then generates suggestions to make that page faster">PageSpeed Insights</button>
+			</p>
+		</section>
+		<section>
+			<h2>Standards</h2>
+			<p>The results of these tests will be written to the DevTools console.</p>
+			<p>
+				<button type="button" class="btn btn-primary" id="standardAccessibility" title="Check that anchors have title attributes and images have alt attributes">Accessibility</button>
+				<button type="button" class="btn btn-primary" id="standardBrokenLinks" title="Check for broken links">Broken Links</button>
+				<button type="button" class="btn btn-primary" id="standardConsoleLog" title="Check for console.log usage">Check for console.log</button>
+				<button type="button" class="btn btn-primary" id="standardCompatibility" title="Check for HTML5 elements in the page's source">Compatibility</button>
+				<button type="button" class="btn btn-primary" id="standardMarkup" title="Validate HTML and CSS using the W3C validator">Markup</button>
+				<button type="button" class="btn btn-primary" id="standardPrivacy" title="Check the page for a link to '*/*privacy* (case insensitive)">Privacy</button>
+				<button type="button" class="btn btn-primary" id="standardRelationshipAttributes" title="Check that URLs have sanitized links">Relationship Attributes</button>
+				<button type="button" class="btn btn-primary" id="standardRelativeUrls" title="Check that URLs are relative">Relative URLs</button>
+				<button type="button" class="btn btn-primary" id="standardSEO" title="Check page against Google and Bing SEO webmaster guidelines">SEO</button>
+				<button type="button" class="btn btn-primary" id="standardUsability" title="Check page against Usability.gov guidelines">Usability</button>
+			</p>
+		</section>
+		<footer>
+			<p id="copyright-date">© Timothy Cope</p>
+		</footer>
+	</main>
+</body>
+	<!-- Scripts -->
+	<script type="text/javascript" src="./js/extension.js"></script>
+</html>

@@ -1,0 +1,3 @@
+function save_options(){var pagespeedKeyValue=document.getElementById('pagespeed-key').value;chrome.storage.sync.set({"pagespeedKey":pagespeedKeyValue},function(){var status=document.getElementById('status');status.textContent='Option(s) saved.';setTimeout(function(){status.textContent='';},750);});}
+function restore_options(){chrome.storage.sync.get("pagespeedKey",function(obj){document.getElementById('pagespeed-key').value=obj.pagespeedKey;});}
+document.addEventListener('DOMContentLoaded',restore_options);document.getElementById('save').addEventListener('click',save_options);

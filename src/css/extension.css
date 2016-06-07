@@ -1,0 +1,193 @@
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(../font/LeagueSpartan-Bold.woff);
+}
+
+html {
+	/* max-height: 580px; */	/* Max allowed by Google */
+	/* max-width: 780px; */ 	/* Max allowed by Google */
+	min-width: 250px; 			/* minimum to fit in our smallest breakpoint */
+	max-width: 250px; 			/* For Debugging */
+}
+
+body {
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+}
+
+h2 {
+	font-family: LeagueSpartan, sans-serif;
+	font-size: 14px;
+	text-align: left;
+	position: relative;
+	margin-top: 0px;
+}
+
+h2:after {
+	background: #000000;
+	bottom: -.5rem;
+	box-sizing: border-box;
+	content: "";
+	left: 0;
+	height: .25rem;
+	position: absolute;
+	width: 3rem;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+body {
+	background-color: #F3F3F3;
+}
+
+main {
+	background-color: #fff;
+	padding-top: 2px;
+}
+
+section {
+	background-color: #F3F3F3;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+footer {
+	background-color: #6d6d6d;
+	text-align: left;
+	color: #fff;
+	padding-left: 40px;
+}
+
+button {
+	cursor: pointer;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+}
+
+.spire-logo {
+	display: block;
+	margin: 0px auto;
+	width: 90%;
+}
+
+.devices-header {
+	display: inline-block;
+}
+
+.custom-width-hidden {
+	display: none;
+}
+
+.custom-width-shown {
+	display: block;
+	margin-top: .75rem;
+}
+
+#customWidthField {
+	padding-left: 2px;
+	width: 4rem;
+}
+
+#goCustomWidth {
+	width: 3rem;
+}
+
+/* Bootstrap buttons */
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	margin-bottom: 1px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+/* Icon buttons */
+.icon {
+	display:inline-block;
+    width: 32px;
+    height: 32px;
+    border: none;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.icon.custom-resizer {
+	background: url(../img/gear.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	float: right;
+	height: 1rem;
+	margin: 0;
+	width: 1rem;
+}
+
+.icon.resize-mobile {
+	background: url(../img/mobile.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon.resize-mobilewide {
+	background: url(../img/mobile-wide.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon.resize-tablet {
+	background: url(../img/tablet.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon.resize-desktop {
+	background: url(../img/desktop.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon.resize-desktopwide {
+	background: url(../img/desktop-wide.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
